@@ -3,7 +3,6 @@ import Header from "./Header";
 import Questions from "./Questions";
 import Teams from "./Teams";
 import QuestionModal from "./QuestionModal";
-import "./App.css";
 import useZ from "./z";
 import moment from "moment";
 
