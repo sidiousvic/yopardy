@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import useZ from "./z";
+import Fade from "react-reveal/Fade";
 
 const QuestionModal = props => {
   const setSelected = useZ(z => z.setSelected);
@@ -25,24 +26,26 @@ const QuestionModal = props => {
 
   return (
     <div className="question-modal">
-      <div className="question-modal-question">{selected.question}</div>
-      {showingAnswer ? (
-        <>
-          <div className="question-modal-answer">{selected.answer}</div>
-          <button onClick={handleScore} className="team-button">
-            Hell yeah!
-          </button>
-        </>
-      ) : (
-        <button onClick={handleShowAnswer}> SHOW ANSWER </button>
-      )}
+      <Fade bottom>
+        <div className="question-modal-question">{selected.question}</div>
+        {showingAnswer ? (
+          <Fade bottom>
+            <div className="question-modal-answer">{selected.answer}</div>
+            <button onClick={handleScore} className="team-button">
+              Hell yeah!
+            </button>
+          </Fade>
+        ) : (
+          <button onClick={handleShowAnswer}> SHOW ANSWER </button>
+        )}
 
-      <button onClick={handleClose} className="question-modal-close-button">
-        CLOSE
-        <span role="img" aria-label="red cross">
-          ❌
-        </span>
-      </button>
+        <button onClick={handleClose} className="question-modal-close-button">
+          CLOSE
+          <span role="img" aria-label="red cross">
+            ❌
+          </span>
+        </button>
+      </Fade>
     </div>
   );
 };
