@@ -4,7 +4,7 @@
     "questions": [
       {
         "value": 100,
-        "question": "What's the difference between let and const?",
+        "question": "What is the difference between let and const?",
         "answer": "Unlike let, when const is used, a variable can not be reassigned."
       },
       {
