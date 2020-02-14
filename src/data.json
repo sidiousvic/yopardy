@@ -1,11 +1,11 @@
 [
   {
-    "name": "week1",
+    "name": "Javascript",
     "questions": [
       {
         "value": 100,
-        "question": "Question 1 in week 1 for 100 points",
-        "answer": "Answer"
+        "question": "What's the difference between let and const?",
+        "answer": "Unlike let, when const is used, a variable can not be reassigned."
       },
       {
         "value": 200,
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "name": "week2",
+    "name": "Data Structures",
     "questions": [
       {
         "value": 100,
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "name": "week3",
+    "name": "Backend",
     "questions": [
       {
         "value": 100,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "name": "week4",
+    "name": "Frontend",
     "questions": [
       {
         "value": 100,
@@ -120,7 +120,7 @@
     ]
   },
   {
-    "name": "week5",
+    "name": "CI/CD",
     "questions": [
       {
         "value": 100,
