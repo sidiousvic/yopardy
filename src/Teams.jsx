@@ -42,7 +42,7 @@ const Teams = memo(() => {
         className="team"
         id="t3"
       >
-        Team <div className="score-display">{score.t3}</div>{" "}
+        Team 3 <div className="score-display">{score.t3}</div>{" "}
         {team === "t3" && "🔥"}
       </div>
     </div>
