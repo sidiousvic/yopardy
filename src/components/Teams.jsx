@@ -1,5 +1,5 @@
 import React, { useCallback, memo } from "react";
-import useZ from "./z";
+import useZ from "../z";
 
 const Teams = memo(() => {
   const setTeam = useZ(z => z.setTeam);

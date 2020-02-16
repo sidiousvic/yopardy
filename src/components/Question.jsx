@@ -1,5 +1,5 @@
 import React, { memo, useCallback } from "react";
-import useZ from "./z";
+import useZ from "../z";
 
 const Question = memo(props => {
   const { value, question } = props;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import useZ from "./z";
+import useZ from "../z";
 import Fade from "react-reveal/Fade";
 
 const QuestionModal = props => {
