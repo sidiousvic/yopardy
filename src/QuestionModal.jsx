@@ -31,16 +31,21 @@ const QuestionModal = props => {
         {showingAnswer ? (
           <Fade bottom>
             <div className="question-modal-answer">{selected.answer}</div>
-            <button onClick={handleScore} className="team-button">
-              Hell yeah!
+            <button onClick={handleScore} className="hell-yeah-button">
+              HELL YEAH!{" "}
+              <span role="img" aria-label="red cross">
+                ✅
+              </span>
             </button>
           </Fade>
         ) : (
-          <button onClick={handleShowAnswer}> SHOW ANSWER </button>
+          <button className="show-answer-button" onClick={handleShowAnswer}>
+            SHOW ANSWER
+          </button>
         )}
 
-        <button onClick={handleClose} className="question-modal-close-button">
-          CLOSE
+        <button onClick={handleClose} className="close-modal-button">
+          {showingAnswer ? "NOPE" : "CLOSE"}{" "}
           <span role="img" aria-label="red cross">
             ❌
           </span>

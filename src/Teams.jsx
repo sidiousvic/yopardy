@@ -19,31 +19,31 @@ const Teams = memo(() => {
         onClick={e => {
           handleClick(e.target.id);
         }}
-        className="team"
+        className={`team ${team === "t1" && "team-selected"}`}
         id="t1"
       >
-        Team 1 <div className="score-display">{score.t1}</div>{" "}
-        {team === "t1" && "🔥"}
+        TEAM 1 {team === "t1" ? "🔮" : "💅🏼"}
+        <div className="score-display">{score.t1}</div>
       </div>
       <div
         onClick={e => {
           handleClick(e.target.id);
         }}
-        className="team"
+        className={`team ${team === "t2" && "team-selected"}`}
         id="t2"
       >
-        Team 2 <div className="score-display">{score.t2}</div>
-        {team === "t2" && "🔥"}
+        TEAM 2 {team === "t2" ? "🔮" : "💅🏼"}
+        <div className="score-display">{score.t2}</div>
       </div>
       <div
         onClick={e => {
           handleClick(e.target.id);
         }}
-        className="team"
+        className={`team ${team === "t3" && "team-selected"}`}
         id="t3"
       >
-        Team 3 <div className="score-display">{score.t3}</div>{" "}
-        {team === "t3" && "🔥"}
+        TEAM 3 {team === "t3" ? "🔮" : "💅🏼"}
+        <div className="score-display">{score.t3}</div>
       </div>
     </div>
   );

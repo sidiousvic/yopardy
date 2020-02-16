@@ -19,29 +19,68 @@ code {
 
 .App {
   height: 100vh;
+  display: flex;
+  background-color: blue;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Mamemoji;
+  font-size: 4vh;
+  background-color: blue;
+  color: white;
+  height: 9vh;
+  width: 100%;
 }
 
 .questions {
   display: flex;
-  height: 80vh;
-  border: 1px lime solid;
+  height: 60vh;
+  width: 100%;
 }
 
 .column {
-  width: 25%;
-  border: 1px fuchsia solid;
+  width: 20%;
 }
 
 .column-header {
+  display: flex;
+  background-color: blue;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+  justify-content: center;
+  font-family: Mamemoji;
   height: 5%;
-  border: 1px yellow solid;
 }
 
 .question {
   height: 19%;
-  background-color: blueviolet;
+  background-color: white;
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Mamemoji;
   cursor: pointer;
   user-select: none;
+  border: white solid 1px;
+  font-size: 2rem;
+}
+
+.question:hover {
+  animation: bordercolors 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s infinite;
+  color: white;
+  font-size: 3rem;
+  background-color: blue;
 }
 
 .teams {
@@ -49,21 +88,43 @@ code {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   cursor: pointer;
+  user-select: none;
+  font-family: Mamemoji;
+  font-size: 2rem;
+  color: white;
+  padding: 1rem;
+}
+
+.score-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Mamemoji;
+  cursor: pointer;
+  font-size: 4vh;
   user-select: none;
 }
 
 .question-modal {
+  color: white;
+  font-family: Mamemoji;
+  font-size: 4rem;
   position: absolute;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  background: rgba(0, 255, 0, 0.7);
+  background: blue;
   height: 100%;
   width: 100%;
 }
@@ -72,10 +133,99 @@ code {
   font-size: 3rem;
 }
 
+.show-answer-button {
+  background-color: blue;
+  font-size: 3rem;
+  color: white;
+}
+.show-answer-button:hover {
+  background-color: white;
+  font-size: 3rem;
+  color: blue;
+}
+
+.close-modal-button {
+  background-color: blue;
+  font-size: 3rem;
+  color: white;
+}
+
+.close-modal-button:hover {
+  background-color: white;
+  font-size: 3rem;
+  color: blue;
+}
+
 .question-modal-answer {
-  font-size: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.react-reveal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hell-yeah-button {
+  background-color: blue;
+  font-size: 3rem;
+  color: white;
+}
+
+.hell-yeah-button:hover {
+  background-color: white;
+  font-size: 3rem;
+  color: blue;
+}
+
+.score-last-updated {
+  color: white;
+  font-family: Mamemoji;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 button {
   cursor: pointer;
+  font-family: Mamemoji;
+  font-size: 1rem;
+}
+
+.reset-score-button:hover {
+  background-color: red;
+  color: white;
+}
+
+.team-selected {
+  animation: bordercolors 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s infinite;
+}
+
+@keyframes bordercolors {
+  0% {
+    border: 1px solid lime;
+    transition: 2s linear;
+  }
+  20% {
+    border: 1px solid yellow;
+    transition: 2s linear;
+  }
+  40% {
+    border: 1px solid orange;
+    transition: 2s linear;
+  }
+  60% {
+    border: 1px solid red;
+    transition: 2s linear;
+  }
+  80% {
+    border: 1px solid fuchsia;
+    transition: 2s linear;
+  }
+  100% {
+    border: 1px solid cyan;
+    transition: 2s linear;
+  }
 }

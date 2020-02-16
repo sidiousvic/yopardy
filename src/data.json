@@ -1,6 +1,6 @@
 [
   {
-    "name": "Javascript",
+    "name": "JAVASCRIPT",
     "questions": [
       {
         "value": 100,
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "name": "Data Structures",
+    "name": "CS",
     "questions": [
       {
         "value": 100,
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "name": "Backend",
+    "name": "BACKEND",
     "questions": [
       {
         "value": 100,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "name": "Frontend",
+    "name": "FRONTEND",
     "questions": [
       {
         "value": 100,
