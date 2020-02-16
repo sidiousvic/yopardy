@@ -27,30 +27,39 @@ const QuestionModal = props => {
   return (
     <div className="question-modal">
       <Fade bottom>
-        <div className="question-modal-question">{selected.question}</div>
-        {showingAnswer ? (
-          <Fade bottom>
-            <div className="question-modal-answer">{selected.answer}</div>
-            <button onClick={handleScore} className="hell-yeah-button">
-              HELL YEAH!{" "}
-              <span role="img" aria-label="red cross">
-                ✅
-              </span>
-            </button>
-          </Fade>
-        ) : (
-          <button className="show-answer-button" onClick={handleShowAnswer}>
-            SHOW ANSWER
-          </button>
-        )}
-
-        <button onClick={handleClose} className="close-modal-button">
-          {showingAnswer ? "NOPE" : "CLOSE"}{" "}
-          <span role="img" aria-label="red cross">
-            ❌
-          </span>
-        </button>
+        <div className="question-modal-question">
+          {selected.question.toUpperCase()}
+        </div>
       </Fade>
+      {showingAnswer ? (
+        <Fade bottom>
+          <div className="question-modal-answer">
+            {selected.answer.toUpperCase()}
+          </div>
+        </Fade>
+      ) : (
+        <button className="show-answer-button" onClick={handleShowAnswer}>
+          SHOW ANSWER
+        </button>
+      )}
+
+      {showingAnswer && (
+        <div className="answer-buttons">
+          <button onClick={handleScore} className="hell-yeah-button">
+            HELL YEAH!{" "}
+            <span role="img" aria-label="red cross">
+              ✅
+            </span>
+          </button>
+
+          <button onClick={handleClose} className="close-modal-button">
+            {showingAnswer ? "NOPE" : "CLOSE"}{" "}
+            <span role="img" aria-label="red cross">
+              ❌
+            </span>
+          </button>
+        </div>
+      )}
     </div>
   );
 };
