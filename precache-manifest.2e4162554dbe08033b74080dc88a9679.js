@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4c9058618a44ded07ed21a2160731e56",
+    "revision": "6cd9b5b4f95818e52b1855230e2e6404",
     "url": "/yopardy/index.html"
   },
   {
-    "revision": "d4dfbd110bb92a79b898",
-    "url": "/yopardy/static/css/main.c9d8eb07.chunk.css"
+    "revision": "2ffba53f39cd90714e4f",
+    "url": "/yopardy/static/css/main.b955ade0.chunk.css"
   },
   {
     "revision": "10ed9bb0132374ebaf86",
@@ -16,11 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yopardy/static/js/2.99e614e9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d4dfbd110bb92a79b898",
-    "url": "/yopardy/static/js/main.670dc1dd.chunk.js"
+    "revision": "2ffba53f39cd90714e4f",
+    "url": "/yopardy/static/js/main.3f02317c.chunk.js"
   },
   {
     "revision": "ce60785055791c77f7af",
     "url": "/yopardy/static/js/runtime-main.3619805e.js"
+  },
+  {
+    "revision": "4030c1eabdf5e8a8da85c71fff7da56f",
+    "url": "/yopardy/static/media/mamemoji.4030c1ea.ttf"
   }
 ]);
