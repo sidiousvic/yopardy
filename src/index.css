@@ -194,6 +194,14 @@ button {
   font-size: 1rem;
 }
 
+.answer-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .reset-score-button:hover {
   background-color: red;
   color: white;
