@@ -58,11 +58,11 @@ code {
   font-size: 1.3rem;
   justify-content: center;
   font-family: Mamemoji;
-  height: 5%;
+  height: 15%;
 }
 
 .question {
-  height: 19%;
+  height: 15%;
   background-color: white;
   display: flex;
   color: black;
@@ -112,6 +112,7 @@ code {
   cursor: pointer;
   font-size: 4vh;
   user-select: none;
+  pointer-events: none;
 }
 
 .question-modal {
@@ -131,6 +132,7 @@ code {
 
 .question-modal-question {
   font-size: 3rem;
+  text-align: center;
 }
 
 .show-answer-button {
@@ -159,13 +161,6 @@ code {
 .question-modal-answer {
   text-align: center;
   font-size: 3rem;
-}
-
-.react-reveal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .hell-yeah-button {
