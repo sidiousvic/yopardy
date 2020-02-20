@@ -3,12 +3,14 @@ import useZ from "../z";
 import Fade from "react-reveal/Fade";
 
 const QuestionModal = props => {
-  const setSelected = useZ(z => z.setSelected);
   const selected = useZ(z => z.selected);
-  const setScore = useZ(z => z.setScore);
+  const setSelected = useZ(z => z.setSelected);
   const score = useZ(z => z.score);
+  const setScore = useZ(z => z.setScore);
   const team = useZ(z => z.team);
   const [showingAnswer, setShowingAnswer] = useState(false);
+  const answered = useZ(z => z.answered);
+  const setAnswered = useZ(z => z.setAnswered);
 
   const handleClose = () => {
     setSelected(null);
@@ -22,14 +24,13 @@ const QuestionModal = props => {
 
   const handleShowAnswer = () => {
     setShowingAnswer(!showingAnswer);
+    setAnswered([...answered, selected.question]);
   };
 
   return (
     <div className="question-modal">
       <Fade bottom>
-        <div className="question-modal-question">
-          {selected.question.toUpperCase()}
-        </div>
+        <div className="question-modal-question">{selected.question}</div>
       </Fade>
       {showingAnswer ? (
         <Fade bottom>

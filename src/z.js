@@ -2,11 +2,16 @@ import create from "zustand";
 
 const [useZ] = create((set, get) => ({
   team: "t1",
+  setTeam: team => set({ team }),
   selected: "",
   setSelected: selected => {
     set({ selected });
   },
-  setTeam: team => set({ team }),
+  answered: [],
+  setAnswered: answered => {
+    localStorage.setItem("answered", JSON.stringify(answered));
+    set({ answered });
+  },
   score: {
     t1: 0,
     t2: 0,
@@ -30,13 +35,16 @@ const [useZ] = create((set, get) => ({
     lastUpdated: new Date().toString()
   },
   setScoreLastUpdated: scoreLastUpdated => set({ scoreLastUpdated }),
-  resetScore: () => {
+  reset: () => {
     const score = {
       t1: 0,
       t2: 0,
       t3: 0
     };
+    const answered = [];
     localStorage.setItem("score", JSON.stringify(score));
+    localStorage.setItem("answered", JSON.stringify());
+    set({ answered });
     set({ score });
   }
 }));
