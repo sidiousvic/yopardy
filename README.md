@@ -9,20 +9,22 @@ Check it out by clicking the cheese. [🧀](https://sidiousvic.github.io/yopardy
 
 ## Contribute
 
-1. **Clone the repo**
+1. **Clone the repo** `git clone https://github.com/sidiousvic/yopardy.git`
 
 2. **Make a feature branch** `git checkout -b <myfeature>`
 
-3. `yarn start` **and hack away, commit often and atomically**
+3. `yarn start` **and hack away**
 
-I reccomend you take a while to understand how state is implemented with [`zustand`](https://github.com/react-spring/zustand). 
+At this point, I reccomend you take a while to understand how state is implemented with [`zustand`](https://github.com/react-spring/zustand). Try your best to stay consistent with the current use.
 
-4. **PR against master, assign** `@sidiousvic` **for review**
+4. **Commit often and atomically** ⚠️
+
+5. **PR against master, assign** `@sidiousvic` **for review**
 
 
-### Wanted Features
+## Wanted Features
 
-`🔥 Most wanted  💅🏼 Easy  😈 Fiddly 🍪 Unnecessary but fun`
+#### `🔥 Most wanted  💅🏼 Easy  😈 Fiddly 🍪 Unnecessary but fun`
 
 🥑 Add tests 🔥
 
@@ -48,3 +50,4 @@ I reccomend you take a while to understand how state is implemented with [`zusta
 
 🥑 Customizable team names 💅🏼
 
+*For new features, [please create an issue](https://github.com/sidiousvic/yopardy/issues).*
