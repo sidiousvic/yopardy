@@ -24,9 +24,10 @@ At this point, I reccomend you take a while to understand how state is implement
 
 ## Wanted Features
 
-#### `🔥 Most wanted  💅🏼 Easy  😈 Fiddly 🍪 Unnecessary but fun`
+#### `🔥 Most wanted  💅🏼 Easy  😈 Fiddly 🍪 Unnecessary but fun 🤬 Are you f*cking kidding me!?`
 
-🥑 Add tests 🔥
+
+🥑 Add unit tests 🔥
 
 🥑 Refactor to Typescript 🔥😈🍪
 
@@ -36,18 +37,27 @@ At this point, I reccomend you take a while to understand how state is implement
 
 🥑 Add music, and change music according to stage 😈🍪
 
-🥑 Random double point round 😈🍪
+🥑 Random double point round 🍪
 
 🥑 Implement `xstate` finite state machines 🔥😈🍪
 
-🥑 Final extra points question that anybody can answer 😈🍪
+🥑 Final extra points question that anybody can answer 🍪
+
+🥑 Implement a backend with a question database and server 🔥😈🤬
 
 🥑 Points penalty if you got a question wrong (half of winnable points) 💅🏼
 
-🥑 Timer on the screen for choosing, another for answering 
+🥑 Implement an editor page where you can update questions 😈🍪🤬
+
+🥑 Timer on the screen for choosing, another for answering 😈
 
 🥑 Implement button to pick a random question 💅🏼🍪
 
 🥑 Customizable team names 💅🏼
 
-*For new features, [please create an issue](https://github.com/sidiousvic/yopardy/issues).*
+🥑 Add end to end testing with `cypress` 🔥🤬
+
+🥑 Turn every item in this list into an issue with appropriate emoji labels 🔥🤬
+
+
+For new features, [please create an issue](https://github.com/sidiousvic/yopardy/issues).
