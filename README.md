@@ -24,7 +24,7 @@ At this point, I reccomend you take a while to understand how state is implement
 
 ## Wanted Features
 
-#### `🔥 Most wanted  💅🏼 Easy  😈 Fiddly 🍪 Unnecessary but fun 🤬 Are you f*cking kidding me!?`
+#### `🔥 Most wanted   💅🏼 Easy   😈 Fiddly   🍪 Unnecessary but fun   🤬 Are you f*cking kidding me!?`
 
 
 🥑 Add unit tests 🔥
