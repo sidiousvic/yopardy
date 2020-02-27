@@ -1,6 +1,6 @@
 ## y o p a r d y 🍍
 
-AN APP OF JEOPARDOUS FUN 🔥🔥🔥
+AN APP OF JEOPARDOUS FUN 🤖👍🏼🔥
 
 Check it out by clicking the cheese. [🧀](https://sidiousvic.github.io/yopardy/)
 
@@ -15,30 +15,36 @@ Check it out by clicking the cheese. [🧀](https://sidiousvic.github.io/yopardy
 
 3. `yarn start` **and hack away, commit often and atomically**
 
+I reccomend you take a while to understand how state is implemented with [`zustand`](https://github.com/react-spring/zustand). 
+
 4. **PR against master, assign** `@sidiousvic` **for review**
 
 
 ### Wanted Features
 
-🥑 Add tests 🔥🔥🔥
+`🔥 Most wanted  💅🏼 Easy  😈 Fiddly 🍪 Unnecessary but fun`
 
-🥑 Refactor to Typescript 🔥🔥🔥
+🥑 Add tests 🔥
 
-🥑 Emojis should appear on boxes to show right or wrong answer
+🥑 Refactor to Typescript 🔥😈🍪
 
-🥑 Indicate which team answered and whether they got it right
+🥑 Emojis should appear on boxes to show right or wrong answer 💅🏼
 
-🥑 Add music, and change music according to stage
+🥑 Indicate which team answered and whether they got it right 💅🏼
 
-🥑 Random double point round
+🥑 Add music, and change music according to stage 😈🍪
 
-🥑 Final extra points question that anybody can answer
+🥑 Random double point round 😈🍪
 
-🥑 Points penalty if you got a question wrong (half of winnable points)
+🥑 Implement `xstate` finite state machines 🔥😈🍪
 
-🥑 Timer on the screen for choosing, another for answering
+🥑 Final extra points question that anybody can answer 😈🍪
 
-🥑 Implement button to pick a random question
+🥑 Points penalty if you got a question wrong (half of winnable points) 💅🏼
 
-🥑 Customizable team names
+🥑 Timer on the screen for choosing, another for answering 
+
+🥑 Implement button to pick a random question 💅🏼🍪
+
+🥑 Customizable team names 💅🏼
 
