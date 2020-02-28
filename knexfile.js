@@ -15,8 +15,4 @@ const databaseConfig = {
   }
 };
 
-module.exports = {
-  development: databaseConfig,
-  staging: databaseConfig,
-  production: databaseConfig
-};
+module.exports = databaseConfig;

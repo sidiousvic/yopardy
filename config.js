@@ -11,7 +11,7 @@ module.exports = {
   },
 
   express: {
-    port: process.env.PORT
+    port: process.env.EXPRESS_PORT
   },
 
   logger: {
