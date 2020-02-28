@@ -7,8 +7,11 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "dotenv": "^8.2.0",
     "gh-pages": "^2.2.0",
+    "knex": "^0.20.10",
     "moment": "^2.24.0",
+    "pg": "^7.18.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-reveal": "^1.2.2",
@@ -22,7 +25,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "migrate": "knex migrate:up",
+    "migrate:rollback": "knex migrate:down",
+    "seed": "knex seed:run"
   },
   "eslintConfig": {
     "extends": "react-app"
