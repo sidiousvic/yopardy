@@ -18,6 +18,7 @@ const QuestionModal = props => {
   };
 
   const handleScore = () => {
+    selected.correct = true;
     setScore({ ...score, [team]: score[team] + selected.value });
     handleClose();
   };

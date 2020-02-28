@@ -13,6 +13,7 @@ const Column = props => {
         value={question.value}
         question={question}
         answers={question.answers}
+        correct={question.correct}
       />
     ));
   };

@@ -14,10 +14,17 @@ const Question = memo(props => {
     setSelected(question);
   }, [setSelected, question]);
 
+  const emoji = () => {
+    if (question.correct) {
+      return "🥑";
+    }
+    return "🌮";
+  };
+
   return (
     <>
       <div onClick={handleClick} className="question">
-        {answered.includes(question.question) ? "🥑" : value}
+        {answered.includes(question.question) ? emoji() : value}
       </div>
     </>
   );
