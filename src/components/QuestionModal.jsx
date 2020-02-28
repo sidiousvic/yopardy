@@ -44,23 +44,22 @@ const QuestionModal = props => {
         </button>
       )}
 
-      {showingAnswer && (
-        <div className="answer-buttons">
+      <div className="answer-buttons">
+        {showingAnswer && (
           <button onClick={handleScore} className="hell-yeah-button">
             HELL YEAH!{" "}
             <span role="img" aria-label="red cross">
               ✅
             </span>
           </button>
-
-          <button onClick={handleClose} className="close-modal-button">
-            {showingAnswer ? "NOPE" : "CLOSE"}{" "}
-            <span role="img" aria-label="red cross">
-              ❌
-            </span>
-          </button>
-        </div>
-      )}
+        )}
+        <button onClick={handleClose} className="close-modal-button">
+          {showingAnswer ? "NOPE" : "CLOSE"}{" "}
+          <span role="img" aria-label="red cross">
+            ❌
+          </span>
+        </button>
+      </div>
     </div>
   );
 };
