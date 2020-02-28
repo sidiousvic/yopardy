@@ -1,0 +1,152 @@
+[
+  {
+    "name": "JS",
+    "questions": [
+      {
+        "value": 100,
+        "question": "When this is used, a variable can not be reassigned.",
+        "answer": "const"
+      },
+      {
+        "value": 200,
+        "question": "The context in which values are visible or can be referenced.",
+        "answer": "scope"
+      },
+      {
+        "value": 300,
+        "question": "The combination of a function with reference to its lexical environment.",
+        "answer": "Closure"
+      },
+      {
+        "value": 400,
+        "question": "The three most common ways to handle asynchronous operations in JavaScript.",
+        "answer": "Callbacks, Promises, async/await"
+      },
+      {
+        "value": 500,
+        "question": "This is JavaScript's inheritance model.",
+        "answer": "The prototype chain"
+      }
+    ]
+  },
+  {
+    "name": "CS",
+    "questions": [
+      {
+        "value": 100,
+        "question": "The repetition of a sequence of computer instructions a specified number of times or until a condition is met.",
+        "answer": "loop"
+      },
+      {
+        "value": 200,
+        "question": "Time required for a function to execute based on its input size.",
+        "answer": "Big O notation"
+      },
+      {
+        "value": 300,
+        "question": "Programming technique involving the use of a procedure, subroutine, function, or algorithm that calls itself one or more times until a specified condition is met.",
+        "answer": "Recursion"
+      },
+      {
+        "value": 400,
+        "question": "In this data structure, for any given node C, if P is a parent node of C, then the key (the value) of P is greater than or equal to the key of C.",
+        "answer": "Heap"
+      },
+      {
+        "value": 500,
+        "question": "A form of automatic memory management which reclaims memory occupied by objects that are no longer in use by the program.",
+        "answer": "Garbage collection"
+      }
+    ]
+  },
+  {
+    "name": "BACKEND",
+    "questions": [
+      {
+        "value": 100,
+        "question": "The most popular Node framework, allowing us to write handlers for requests with different HTTP verbs at different URL paths.",
+        "answer": "Express"
+      },
+      {
+        "value": 200,
+        "question": "Computer program or a device that provides functionality for other programs or devices, called \"clients\".",
+        "answer": "Server"
+      },
+      {
+        "value": 300,
+        "question": "A small piece of data sent from a website and stored on the user's computer by the user's web browser while the user is browsing.",
+        "answer": "Cookie"
+      },
+      {
+        "value": 400,
+        "question": "A keyword in SQL that allows you to rename a column or table using an alias.",
+        "answer": "AS"
+      },
+      {
+        "value": 500,
+        "question": "Refers to the management of incremental, reversible changes and version control for relational database schemas.",
+        "answer": "Schema migration"
+      }
+    ]
+  },
+  {
+    "name": "FRONTEND",
+    "questions": [
+      {
+        "value": 100,
+        "question": "The API to a webpage, allowing programs to read and manipulate the page content, structure, and styles.",
+        "answer": "DOM"
+      },
+      {
+        "value": 200,
+        "question": "Describes all HTML elements, and includes content, padding, border and margin.",
+        "answer": "The CSS box model"
+      },
+      {
+        "value": 300,
+        "question": "HTML5 convention via which HTML elements clearly describe their meaning to both the browser and the developer, as well as providing enhanced accessibility.",
+        "answer": "Semantic elements"
+      },
+      {
+        "value": 400,
+        "question": "A React hook which serves the same purpose as componentDidMount, componentDidUpdate, and componentWillUnmount did in React classes, but unified into a single API.",
+        "answer": "useEffect"
+      },
+      {
+        "value": 500,
+        "question": "A JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins.",
+        "answer": "WebGL"
+      }
+    ]
+  },
+  {
+    "name": "CI/CD",
+    "questions": [
+      {
+        "value": 100,
+        "question": "It advocates adaptive planning, evolutionary development, early delivery, and continual improvement, and it encourages rapid and flexible response to change.",
+        "answer": "Agile"
+      },
+      {
+        "value": 200,
+        "question": "A software development practice where members of a team combine their work frequently.",
+        "answer": "Continuous Integration"
+      },
+      {
+        "value": 300,
+        "question": "Design philosophy stating that rather than making users work around the product, the product should work around the user.",
+        "answer": "User Centered Design"
+      },
+      {
+        "value": 400,
+        "question": "An approach to building new businesses based on the belief that entrepreneurs must investigate, experiment, test and iterate as they develop products.",
+        "answer": "Lean Startup"
+      },
+      {
+        "value": 500,
+        "question": "Used to help a product manager (and others in the organization involved with the product's development) understand key traits, behaviors, goals, responsibilities, and needs of a specific type of user.",
+        "answer": "Persona"
+      }
+    ]
+  }
+]
