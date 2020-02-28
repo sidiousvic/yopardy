@@ -45,7 +45,7 @@ function App() {
           .toUpperCase()}
       </div>
       <button onClick={handleResetScore} className="reset-score-button">
-        RESET SCORE
+        RESET GAME
       </button>
     </div>
   );
