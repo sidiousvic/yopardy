@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "migrate": "knex migrate:up",
-    "migrate:rollback": "knex migrate:down",
+    "migrate:down": "knex migrate:down",
     "seed": "knex seed:run"
   },
   "eslintConfig": {
