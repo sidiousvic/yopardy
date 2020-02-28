@@ -5,9 +5,9 @@ const knex = require("knex")(require("../knexfile.js"));
 
 // express set up
 const app = express();
-app.use("/", express.static("build"));
+app.use("/yopardy", express.static("build"));
 
 // let's go!
 app.listen({ port: config.express.port }, () => {
-  console.log(`Happy Yopardy! http://localhost:${config.express.port}`);
+  console.log(`Happy Yopardy! http://localhost:${config.express.port}/yopardy`);
 });
