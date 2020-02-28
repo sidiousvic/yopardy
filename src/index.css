@@ -115,6 +115,19 @@ code {
   pointer-events: none;
 }
 
+.score-negative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Fira Code;
+  cursor: pointer;
+  font-size: 4vh;
+  user-select: none;
+  pointer-events: none;
+  color: red;
+}
+
 .question-modal {
   color: white;
   font-family: Fira Code;
