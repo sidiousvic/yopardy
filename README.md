@@ -9,7 +9,7 @@ Check it out by clicking the cheese. [🧀](https://sidiousvic.github.io/yopardy
 
 ## Contribute
 
-1. **Fork the repo** 
+1. **Fork your respective cohort's branch `ccXX` ** 
 
 2. **Clone your fork** `git clone https://github.com/<yourusername>/yopardy.git``
 
