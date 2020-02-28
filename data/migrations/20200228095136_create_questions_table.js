@@ -14,7 +14,7 @@ exports.up = function(knex) {
     t.string("answer", 500).notNullable();
 
     // points
-    t.integer("points").notNullable();
+    t.integer("value").notNullable();
 
     // whether the question is enabled or not
     // set this to false to prevent question from showing up
@@ -22,7 +22,7 @@ exports.up = function(knex) {
       .notNullable()
       .default(true);
 
-    t.index(["category_id", "points"]);
+    t.index(["category_id", "value"]);
   });
 };
 
