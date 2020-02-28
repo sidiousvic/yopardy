@@ -43,7 +43,7 @@ const [useZ] = create((set, get) => ({
     };
     const answered = [];
     localStorage.setItem("score", JSON.stringify(score));
-    localStorage.setItem("answered", JSON.stringify());
+    localStorage.setItem("answered", JSON.stringify(answered));
     set({ answered });
     set({ score });
   }
