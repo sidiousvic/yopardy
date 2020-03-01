@@ -17,13 +17,10 @@ const QuestionModal = props => {
     setShowingAnswer(!showingAnswer);
   };
 
-  const handleScoreCorrect = () => {
-    setScore({ ...score, [team]: score[team] + selected.value });
-    handleClose();
-  };
-
-  const handleScoreWrong = () => {
-    setScore({ ...score, [team]: score[team] - (selected.value/2) });
+  const handleScore = (correct = false) => {
+    correct === true ? 
+      setScore({ ...score, [team]: score[team] + selected.value }) : 
+      setScore({ ...score, [team]: score[team] - (selected.value/2) }); // if answered incorrectly team gets a penalty of half the possible points
     handleClose();
   };
 
@@ -51,14 +48,14 @@ const QuestionModal = props => {
 
       {showingAnswer && (
         <div className="answer-buttons">
-          <button onClick={handleScoreCorrect} className="hell-yeah-button">
+          <button onClick={() => handleScore(true)} className="hell-yeah-button">
             HELL YEAH!{" "}
             <span role="img" aria-label="red cross">
               ✅
             </span>
           </button>
 
-          <button onClick={handleScoreWrong} className="close-modal-button">
+          <button onClick={handleScore} className="close-modal-button">
             {showingAnswer ? "NOPE" : "CLOSE"}{" "}
             <span role="img" aria-label="red cross">
               ❌
