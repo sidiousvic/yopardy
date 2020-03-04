@@ -11,7 +11,7 @@ Check it out by clicking the cheese. [🧀](https://sidiousvic.github.io/yopardy
 
 1. **Fork your respective cohort's branch**  `ccXX` 
 
-2. **Clone your fork** `git clone https://github.com/<yourusername>/yopardy.git``
+2. **Clone your fork** `git clone https://github.com/<yourusername>/yopardy.git`
 
 3. `yarn start` **and hack away**
 
