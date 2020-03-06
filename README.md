@@ -4,28 +4,49 @@ AN APP OF JEOPARDOUS FUN 🤖👍🏼🔥
 
 Check it out by clicking the cheese. [🧀](https://sidiousvic.github.io/yopardy/)
 
-*BUILT BY SIDIOUSVIC, ENGINEER @ CODE CHRYSALIS 🐛*
-
+_BUILT BY SIDIOUSVIC, ENGINEER @ CODE CHRYSALIS 🐛_
 
 ## Contribute
 
 1. **Clone the repo** `git clone https://github.com/sidiousvic/yopardy.git`
 
-2. **Make a feature branch** `git checkout -b <myfeature>`
+2. **Set up environment variables:** `cp .env.default .env` and edit `.env` with appropriate details:
 
-3. `yarn start` **and hack away**
+```
+# This should point to the server root.
+REACT_APP_SERVER_ROOT=http://localhost:4000/yopardy/
+
+# Your database details.
+DATABASE_URL=
+DATABASE_USER=postgres
+DATABASE_PASSWORD=
+DATABASE_HOST=localhost
+DATABASE_NAME=yopardy
+DATABASE_PORT=5432
+
+# The port you want the express server to run on.
+EXPRESS_PORT=4000
+```
+
+3. **Migrate & feed database:** `yarn migrate && yarn seed`
+
+4. **Make a feature branch** `git checkout -b <myfeature>`
+
+5. **Start server:** `yarn server`
+
+Your server should now be up and generating games at `http://localhost:4000/yopardy/game` by default.
+
+6. **Start your React client:** `yarn start` **and hack away**
 
 At this point, I reccomend you take a while to understand how state is implemented with [`zustand`](https://github.com/react-spring/zustand). Try your best to stay consistent with the current use.
 
-4. **Commit often and atomically** ⚠️
+7. **Commit often and atomically** ⚠️
 
-5. **PR against master, assign** `@sidiousvic` **for review**
-
+8. **PR against master, assign** `@sidiousvic` **for review**
 
 ## Wanted Features
 
 #### `🔥 Most wanted | 💅🏼 Easy | 😈 Fiddly | 🍪 Unneeded but fun | 🤬 You f*cking kidding me!?`
-
 
 🥑 Add unit tests 🔥
 
@@ -58,6 +79,5 @@ At this point, I reccomend you take a while to understand how state is implement
 🥑 Add end to end testing with `cypress` 🔥🤬
 
 🥑 Turn every item in this list into an issue with appropriate emoji labels 🔥🤬
-
 
 For new features, [please create an issue](https://github.com/sidiousvic/yopardy/issues).
