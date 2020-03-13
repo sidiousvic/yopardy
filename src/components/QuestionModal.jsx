@@ -11,16 +11,25 @@ const QuestionModal = props => {
   const [showingAnswer, setShowingAnswer] = useState(false);
   const answered = useZ(z => z.answered);
   const setAnswered = useZ(z => z.setAnswered);
+  const correctAns = useZ(z => z.correctAns);
+  const setCorrectAns = useZ(z => z.setCorrectAns);
 
   const handleClose = () => {
     setSelected(null);
     setShowingAnswer(!showingAnswer);
   };
 
+  const handleCorrect = isCorrect => {
+    if (isCorrect) {
+      setCorrectAns([...correctAns, selected.question]);
+    }
+  };
+
   const handleScore = isCorrectAnswer => {
-    if (isCorrectAnswer === true)
+    if (isCorrectAnswer) {
       setScore({ ...score, [team]: score[team] + selected.value });
-    else setScore({ ...score, [team]: score[team] - selected.value / 2 });
+    } else setScore({ ...score, [team]: score[team] - selected.value / 2 });
+    handleCorrect(isCorrectAnswer);
     handleClose();
   };
 
