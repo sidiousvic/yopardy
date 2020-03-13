@@ -12,6 +12,11 @@ const [useZ] = create((set, get) => ({
     localStorage.setItem("answered", JSON.stringify(answered));
     set({ answered });
   },
+  correctAns: [],
+  setCorrectAns: correctAns => {
+    localStorage.setItem("correct", JSON.stringify(correctAns));
+    set({ correctAns });
+  },
   score: {
     t1: 0,
     t2: 0,
@@ -43,7 +48,7 @@ const [useZ] = create((set, get) => ({
     };
     const answered = [];
     localStorage.setItem("score", JSON.stringify(score));
-    localStorage.setItem("answered", JSON.stringify());
+    localStorage.setItem("answered", JSON.stringify(answered));
     set({ answered });
     set({ score });
   }

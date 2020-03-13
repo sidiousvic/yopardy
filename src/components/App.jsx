@@ -9,6 +9,7 @@ import moment from "moment";
 function App() {
   const setScore = useZ(z => z.setScore);
   const setAnswered = useZ(z => z.setAnswered);
+  const setCorrectAns = useZ(z => z.setCorrectAns);
   const reset = useZ(z => z.reset);
   const selected = useZ(z => z.selected);
   const scoreLastUpdated = useZ(z => z.scoreLastUpdated);
@@ -23,6 +24,11 @@ function App() {
     if (localStorageAnswered) setAnswered(localStorageAnswered);
   }, [setAnswered]);
 
+  const getCorrectFromLs = useCallback(() => {
+    const localStorageCorrect = JSON.parse(localStorage.getItem("correct"));
+    if (localStorageCorrect) setCorrectAns(localStorageCorrect);
+  }, [setCorrectAns]);
+
   const handleResetScore = () => {
     reset();
   };
@@ -30,7 +36,8 @@ function App() {
   useEffect(() => {
     getScoreFromLs();
     getAnsweredFromLs();
-  }, [getScoreFromLs, getAnsweredFromLs]);
+    getCorrectFromLs();
+  }, [getScoreFromLs, getAnsweredFromLs, getCorrectFromLs]);
 
   return (
     <div className="App">
@@ -45,7 +52,7 @@ function App() {
           .toUpperCase()}
       </div>
       <button onClick={handleResetScore} className="reset-score-button">
-        RESET SCORE
+        RESET GAME
       </button>
     </div>
   );

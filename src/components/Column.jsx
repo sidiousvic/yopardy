@@ -7,13 +7,7 @@ const Column = props => {
 
   const renderQuestions = () => {
     return questions.map(question => (
-      <Question
-        qid={question.id}
-        key={shortid.generate()}
-        value={question.value}
-        question={question}
-        answers={question.answers}
-      />
+      <Question qid={question.id} key={shortid.generate()} {...question} />
     ));
   };
 
