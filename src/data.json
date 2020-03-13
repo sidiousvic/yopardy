@@ -5,32 +5,27 @@
       {
         "value": 100,
         "question": "When this is used, a variable can not be reassigned.",
-        "answer": "const",
-        "correct": null
+        "answer": "const"
       },
       {
         "value": 200,
         "question": "The context in which values are visible or can be referenced.",
-        "answer": "scope",
-        "correct": null
+        "answer": "scope"
       },
       {
         "value": 300,
         "question": "The combination of a function with reference to its lexical environment.",
-        "answer": "Closure",
-        "correct": null
+        "answer": "Closure"
       },
       {
         "value": 400,
         "question": "The three most common ways to handle asynchronous operations in JavaScript.",
-        "answer": "Callbacks, Promises, async/await",
-        "correct": null
+        "answer": "Callbacks, Promises, async/await"
       },
       {
         "value": 500,
         "question": "This is JavaScript's inheritance model.",
-        "answer": "The prototype chain",
-        "correct": null
+        "answer": "The prototype chain"
       }
     ]
   },
@@ -40,32 +35,27 @@
       {
         "value": 100,
         "question": "The repetition of a sequence of computer instructions a specified number of times or until a condition is met.",
-        "answer": "loop",
-        "correct": null
+        "answer": "loop"
       },
       {
         "value": 200,
         "question": "Time required for a function to execute based on its input size.",
-        "answer": "Big O notation",
-        "correct": null
+        "answer": "Big O notation"
       },
       {
         "value": 300,
         "question": "Programming technique involving the use of a procedure, subroutine, function, or algorithm that calls itself one or more times until a specified condition is met.",
-        "answer": "Recursion",
-        "correct": null
+        "answer": "Recursion"
       },
       {
         "value": 400,
         "question": "In this data structure, for any given node C, if P is a parent node of C, then the key (the value) of P is greater than or equal to the key of C.",
-        "answer": "Heap",
-        "correct": null
+        "answer": "Heap"
       },
       {
         "value": 500,
         "question": "A form of automatic memory management which reclaims memory occupied by objects that are no longer in use by the program.",
-        "answer": "Garbage collection",
-        "correct": null
+        "answer": "Garbage collection"
       }
     ]
   },
@@ -75,32 +65,27 @@
       {
         "value": 100,
         "question": "The most popular Node framework, allowing us to write handlers for requests with different HTTP verbs at different URL paths.",
-        "answer": "Express",
-        "correct": null
+        "answer": "Express"
       },
       {
         "value": 200,
         "question": "Computer program or a device that provides functionality for other programs or devices, called \"clients\".",
-        "answer": "Server",
-        "correct": null
+        "answer": "Server"
       },
       {
         "value": 300,
         "question": "A small piece of data sent from a website and stored on the user's computer by the user's web browser while the user is browsing.",
-        "answer": "Cookie",
-        "correct": null
+        "answer": "Cookie"
       },
       {
         "value": 400,
         "question": "A keyword in SQL that allows you to rename a column or table using an alias.",
-        "answer": "AS",
-        "correct": null
+        "answer": "AS"
       },
       {
         "value": 500,
         "question": "Refers to the management of incremental, reversible changes and version control for relational database schemas.",
-        "answer": "Schema migration",
-        "correct": null
+        "answer": "Schema migration"
       }
     ]
   },
@@ -110,32 +95,27 @@
       {
         "value": 100,
         "question": "The API to a webpage, allowing programs to read and manipulate the page content, structure, and styles.",
-        "answer": "DOM",
-        "correct": null
+        "answer": "DOM"
       },
       {
         "value": 200,
         "question": "Describes all HTML elements, and includes content, padding, border and margin.",
-        "answer": "The CSS box model",
-        "correct": null
+        "answer": "The CSS box model"
       },
       {
         "value": 300,
         "question": "HTML5 convention via which HTML elements clearly describe their meaning to both the browser and the developer, as well as providing enhanced accessibility.",
-        "answer": "Semantic elements",
-        "correct": null
+        "answer": "Semantic elements"
       },
       {
         "value": 400,
         "question": "A React hook which serves the same purpose as componentDidMount, componentDidUpdate, and componentWillUnmount did in React classes, but unified into a single API.",
-        "answer": "useEffect",
-        "correct": null
+        "answer": "useEffect"
       },
       {
         "value": 500,
         "question": "A JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins.",
-        "answer": "WebGL",
-        "correct": null
+        "answer": "WebGL"
       }
     ]
   },
@@ -145,32 +125,27 @@
       {
         "value": 100,
         "question": "It advocates adaptive planning, evolutionary development, early delivery, and continual improvement, and it encourages rapid and flexible response to change.",
-        "answer": "Agile",
-        "correct": null
+        "answer": "Agile"
       },
       {
         "value": 200,
         "question": "A software development practice where members of a team combine their work frequently.",
-        "answer": "Continuous Integration",
-        "correct": null
+        "answer": "Continuous Integration"
       },
       {
         "value": 300,
         "question": "Design philosophy stating that rather than making users work around the product, the product should work around the user.",
-        "answer": "User Centered Design",
-        "correct": null
+        "answer": "User Centered Design"
       },
       {
         "value": 400,
         "question": "An approach to building new businesses based on the belief that entrepreneurs must investigate, experiment, test and iterate as they develop products.",
-        "answer": "Lean Startup",
-        "correct": null
+        "answer": "Lean Startup"
       },
       {
         "value": 500,
         "question": "Used to help a product manager (and others in the organization involved with the product's development) understand key traits, behaviors, goals, responsibilities, and needs of a specific type of user.",
-        "answer": "Persona",
-        "correct": null
+        "answer": "Persona"
       }
     ]
   }

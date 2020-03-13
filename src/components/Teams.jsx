@@ -23,7 +23,7 @@ const Teams = memo(() => {
         id="t1"
       >
         TEAM 1 {team === "t1" ? "🔮" : "💅🏼"}
-        <div className="score-display">{score.t1}</div>
+        <div className={`${score.t1 < 0 ? "score-negative" : "score-display"}`}>{score.t1}</div>
       </div>
       <div
         onClick={e => {
@@ -33,7 +33,7 @@ const Teams = memo(() => {
         id="t2"
       >
         TEAM 2 {team === "t2" ? "🔮" : "💅🏼"}
-        <div className="score-display">{score.t2}</div>
+        <div className={`${score.t2 < 0 ? "score-negative" : "score-display"}`}>{score.t2}</div>
       </div>
       <div
         onClick={e => {
@@ -43,7 +43,7 @@ const Teams = memo(() => {
         id="t3"
       >
         TEAM 3 {team === "t3" ? "🔮" : "💅🏼"}
-        <div className="score-display">{score.t3}</div>
+        <div className={`${score.t3 < 0 ? "score-negative" : "score-display"}`}>{score.t3}</div>
       </div>
     </div>
   );

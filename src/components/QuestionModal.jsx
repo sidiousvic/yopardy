@@ -11,15 +11,25 @@ const QuestionModal = props => {
   const [showingAnswer, setShowingAnswer] = useState(false);
   const answered = useZ(z => z.answered);
   const setAnswered = useZ(z => z.setAnswered);
+  const correctAns = useZ(z => z.correctAns);
+  const setCorrectAns = useZ(z => z.setCorrectAns);
 
   const handleClose = () => {
     setSelected(null);
     setShowingAnswer(!showingAnswer);
   };
 
-  const handleScore = () => {
-    selected.correct = true;
-    setScore({ ...score, [team]: score[team] + selected.value });
+  const handleCorrect = isCorrect => {
+    if (isCorrect) {
+      setCorrectAns([...correctAns, selected.question]);
+    }
+  };
+
+  const handleScore = isCorrectAnswer => {
+    if (isCorrectAnswer) {
+      setScore({ ...score, [team]: score[team] + selected.value });
+    } else setScore({ ...score, [team]: score[team] - selected.value / 2 });
+    handleCorrect(isCorrectAnswer);
     handleClose();
   };
 
@@ -47,14 +57,20 @@ const QuestionModal = props => {
 
       {showingAnswer && (
         <div className="answer-buttons">
-          <button onClick={handleScore} className="hell-yeah-button">
+          <button
+            onClick={() => handleScore(true)}
+            className="hell-yeah-button"
+          >
             HELL YEAH!{" "}
             <span role="img" aria-label="red cross">
               ✅
             </span>
           </button>
 
-          <button onClick={handleClose} className="close-modal-button">
+          <button
+            onClick={() => handleScore(false)}
+            className="close-modal-button"
+          >
             {showingAnswer ? "NOPE" : "CLOSE"}{" "}
             <span role="img" aria-label="red cross">
               ❌
