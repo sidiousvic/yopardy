@@ -12,6 +12,7 @@ function App() {
   const reset = useZ(z => z.reset);
   const selected = useZ(z => z.selected);
   const scoreLastUpdated = useZ(z => z.scoreLastUpdated);
+  const startGame = useZ(z => z.startGame);
 
   const getScoreFromLs = useCallback(() => {
     const localStorageScore = JSON.parse(localStorage.getItem("score"));
@@ -26,6 +27,10 @@ function App() {
   const handleResetScore = () => {
     reset();
   };
+
+  useEffect(() => {
+    startGame();
+  }, []);
 
   useEffect(() => {
     getScoreFromLs();
@@ -45,7 +50,7 @@ function App() {
           .toUpperCase()}
       </div>
       <button onClick={handleResetScore} className="reset-score-button">
-        RESET SCORE
+        RESET GAME
       </button>
     </div>
   );

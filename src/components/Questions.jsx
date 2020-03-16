@@ -1,11 +1,13 @@
 import React from "react";
 import Column from "./Column";
-import data from "../data.json";
 import shortid from "shortid";
+import useZ from "../z";
 
 const Questions = () => {
+  const game = useZ(z => z.game);
   const renderColumns = () => {
-    return data.map(category => (
+    if (game === null) return <></>;
+    return game.map(category => (
       <Column
         key={shortid.generate()}
         name={category.name}

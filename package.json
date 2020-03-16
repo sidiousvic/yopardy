@@ -7,8 +7,15 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "gh-pages": "^2.2.0",
+    "knex": "^0.20.10",
     "moment": "^2.24.0",
+    "nodemon": "^2.0.2",
+    "pg": "^7.18.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-reveal": "^1.2.2",
@@ -22,7 +29,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "migrate": "knex migrate:latest --knexfile=./knexfile.js",
+    "migrate:down": "knex migrate:down --knexfile=./knexfile.js",
+    "seed": "knex seed:run --knexfile=./knexfile.js",
+    "server": "nodemon  ./srv/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
