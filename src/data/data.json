@@ -14,18 +14,18 @@
       },
       {
         "value": 300,
+        "question": "This is JavaScript's inheritance model.",
+        "answer": "Prototypal inheritance"
+      },
+      {
+        "value": 400,
         "question": "The combination of a function with reference to its lexical environment.",
         "answer": "Closure"
       },
       {
-        "value": 400,
-        "question": "The three most common ways to handle asynchronous operations in JavaScript.",
-        "answer": "Callbacks, Promises, async/await"
-      },
-      {
         "value": 500,
-        "question": "This is JavaScript's inheritance model.",
-        "answer": "Prototypal inheritance"
+        "question": "A subscription model in which objects subscribe to an event and get notified when the event occurs.",
+        "answer": "Observer pattern"
       }
     ]
   },
@@ -145,7 +145,7 @@
       } ,
       {
         "value": 500,
-        "question": "Factor (from XII Factors) in which a developer resists the urge to use different backing services between development and production",
+        "question": "Factor (from XII Factors) in which a developer resists the urge to use different backing services between development and production.",
         "answer": "Dev/Prod Parity"
       }
     ]
