@@ -1,26 +1,53 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useZ from "../z";
 import Fade from "react-reveal/Fade";
+import { set } from "object-path";
 
-const QuestionModal = props => {
-  const selected = useZ(z => z.selected);
-  const setSelected = useZ(z => z.setSelected);
-  const score = useZ(z => z.score);
-  const setScore = useZ(z => z.setScore);
-  const team = useZ(z => z.team);
+const QuestionModal = (props) => {
+  const selected = useZ((z) => z.selected);
+  const setSelected = useZ((z) => z.setSelected);
+  const score = useZ((z) => z.score);
+  const setScore = useZ((z) => z.setScore);
+  const team = useZ((z) => z.team);
   const [showingAnswer, setShowingAnswer] = useState(false);
-  const answered = useZ(z => z.answered);
-  const setAnswered = useZ(z => z.setAnswered);
+  const answered = useZ((z) => z.answered);
+  const setAnswered = useZ((z) => z.setAnswered);
+  const timer = useZ((z) => z.timer);
+  const setTimer = useZ((z) => z.setTimer);
+  const [timerStarted, setTimerStarted] = useState(false);
+  const resetTimer = () => setTimer(10);
+
+  useEffect(() => {
+    if (timerStarted) {
+      const interval = setInterval(() => {
+        if (~~timer - 1 < 1) setShowingAnswer(true);
+        else setTimer(timer - 1);
+      }, 1000);
+      return () => {
+        clearInterval(interval);
+      };
+    }
+  });
+
+  const handleStartTimer = () => setTimerStarted(true);
 
   const handleClose = () => {
     setSelected(null);
+    resetTimer();
     setShowingAnswer(!showingAnswer);
   };
 
-  const handleScore = isCorrectAnswer => {
+  const handleScore = (isCorrectAnswer) => {
     if (isCorrectAnswer === true)
       setScore({ ...score, [team]: score[team] + selected.value });
-    else setScore({ ...score, [team]: (score[team] - selected.value / 2) > 0 ? (score[team] - selected.value / 2) : 0 });
+    else
+      setScore({
+        ...score,
+        [team]:
+          score[team] - selected.value / 2 > 0
+            ? score[team] - selected.value / 2
+            : 0,
+      });
     handleClose();
   };
 
@@ -41,9 +68,25 @@ const QuestionModal = props => {
           </div>
         </Fade>
       ) : (
-        <button className="show-answer-button" onClick={handleShowAnswer}>
-          SHOW ANSWER
-        </button>
+        <>
+          <span
+            id="timer"
+            role="img"
+            aria-label="red cross"
+            onClick={handleStartTimer}
+            style={{ transform: `rotate(${timer * (360 - 18)}deg)` }}
+          >
+            {timerStarted ? `⏳` : "⌛️"}
+          </span>
+          <button className="show-answer-button" onClick={handleShowAnswer}>
+            SHOW ANSWER
+          </button>
+          <button className="close-button" onClick={handleClose}>
+            <span role="img" aria-label="red cross">
+              GO 🔙
+            </span>
+          </button>
+        </>
       )}
 
       {showingAnswer && (
@@ -57,7 +100,6 @@ const QuestionModal = props => {
               ✅
             </span>
           </button>
-
           <button
             onClick={() => handleScore(false)}
             className="close-modal-button"

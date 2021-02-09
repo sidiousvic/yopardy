@@ -17,6 +17,10 @@ code {
   height: 100vh;
 }
 
+#timer:hover {
+  cursor: pointer;
+}
+
 .App {
   height: 100vh;
   display: flex;
