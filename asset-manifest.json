@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/yopardy/static/css/main.4c205d50.chunk.css",
-    "main.js": "/yopardy/static/js/main.9ff91eb4.chunk.js",
-    "main.js.map": "/yopardy/static/js/main.9ff91eb4.chunk.js.map",
+    "main.js": "/yopardy/static/js/main.9577a9d5.chunk.js",
+    "main.js.map": "/yopardy/static/js/main.9577a9d5.chunk.js.map",
     "runtime-main.js": "/yopardy/static/js/runtime-main.3619805e.js",
     "runtime-main.js.map": "/yopardy/static/js/runtime-main.3619805e.js.map",
     "static/js/2.85ad0a18.chunk.js": "/yopardy/static/js/2.85ad0a18.chunk.js",
     "static/js/2.85ad0a18.chunk.js.map": "/yopardy/static/js/2.85ad0a18.chunk.js.map",
     "index.html": "/yopardy/index.html",
-    "precache-manifest.24a65c024f4660a00507550d1553ee15.js": "/yopardy/precache-manifest.24a65c024f4660a00507550d1553ee15.js",
+    "precache-manifest.0c26f3a62a82453dd9190003e055ca53.js": "/yopardy/precache-manifest.0c26f3a62a82453dd9190003e055ca53.js",
     "service-worker.js": "/yopardy/service-worker.js",
     "static/css/main.4c205d50.chunk.css.map": "/yopardy/static/css/main.4c205d50.chunk.css.map",
     "static/js/2.85ad0a18.chunk.js.LICENSE.txt": "/yopardy/static/js/2.85ad0a18.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3619805e.js",
     "static/js/2.85ad0a18.chunk.js",
     "static/css/main.4c205d50.chunk.css",
-    "static/js/main.9ff91eb4.chunk.js"
+    "static/js/main.9577a9d5.chunk.js"
   ]
 }
