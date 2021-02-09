@@ -74,9 +74,9 @@ const QuestionModal = (props) => {
             role="img"
             aria-label="red cross"
             onClick={handleStartTimer}
-            style={{ transform: `rotate(${timer * (360 - 18)}deg)` }}
+            style={{ transform: `rotate(${timer * (342 - 18)}deg)` }}
           >
-            {timerStarted ? `⏳` : "⌛️"}
+            {timerStarted ? `${timer}⏳` : "⌛️"}
           </span>
           <button className="show-answer-button" onClick={handleShowAnswer}>
             SHOW ANSWER
