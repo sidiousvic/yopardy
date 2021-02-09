@@ -1,6 +1,6 @@
 import React from "react";
 import Column from "./Column";
-import data from "../data.json";
+import data from "../data/data.json";
 import shortid from "shortid";
 
 const Questions = () => {
