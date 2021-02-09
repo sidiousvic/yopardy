@@ -20,7 +20,7 @@ const QuestionModal = props => {
   const handleScore = isCorrectAnswer => {
     if (isCorrectAnswer === true)
       setScore({ ...score, [team]: score[team] + selected.value });
-    else setScore({ ...score, [team]: score[team] - selected.value / 2 });
+    else setScore({ ...score, [team]: (score[team] - selected.value / 2) > 0 ? (score[team] - selected.value / 2) : 0 });
     handleClose();
   };
 
