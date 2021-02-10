@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e5c9725f7737bb52d1c20facdd9c8f23",
+    "revision": "fb89579d37ed292a8e990b77ad877bb0",
     "url": "/yopardy/index.html"
   },
   {
-    "revision": "d3705ccfcbb35358f7e3",
-    "url": "/yopardy/static/css/main.24610641.chunk.css"
+    "revision": "62b3e7ea8a66415c4052",
+    "url": "/yopardy/static/css/main.0f1d6a6c.chunk.css"
   },
   {
     "revision": "7e36070575af8bf3645b",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yopardy/static/js/2.9e9789d9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d3705ccfcbb35358f7e3",
+    "revision": "62b3e7ea8a66415c4052",
     "url": "/yopardy/static/js/main.ac429235.chunk.js"
   },
   {
