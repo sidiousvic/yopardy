@@ -4,8 +4,8 @@
     "questions": [
       {
         "value": 100,
-        "question": "When this is used, a variable can not be reassigned.",
-        "answer": "const"
+        "question": "The mechanism that allows for a function call to be written before its declaration.",
+        "answer": "hoisting"
       },
       {
         "value": 200,
@@ -62,7 +62,6 @@
   {
     "name": "BACKEND",
     "questions": [
-      
       {
         "value": 100,
         "question": "Computer program or a device that provides functionality for other programs or devices, called \"clients\".",
@@ -70,8 +69,8 @@
       },
       {
         "value": 200,
-        "question": "A popular Node framework, used to write handlers for requests with different HTTP verbs at different URL paths.",
-        "answer": "Express"
+        "question": "An application layer protocol for distributed, collaborative, hypermedia information systems.",
+        "answer": "HTTP"
       },
       {
         "value": 300,
@@ -142,7 +141,7 @@
         "value": 400,
         "question": "The process of taking code from version control and making it readily available to users of your application in an automated fashion.",
         "answer": "Deployment pipeline"
-      } ,
+      },
       {
         "value": 500,
         "question": "Factor (from XII Factors) in which a developer resists the urge to use different backing services between development and production.",
