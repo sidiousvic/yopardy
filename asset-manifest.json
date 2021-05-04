@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/yopardy/static/css/main.8f7205c7.chunk.css",
-    "main.js": "/yopardy/static/js/main.4f938a35.chunk.js",
-    "main.js.map": "/yopardy/static/js/main.4f938a35.chunk.js.map",
+    "main.css": "/yopardy/static/css/main.980826cd.chunk.css",
+    "main.js": "/yopardy/static/js/main.a29d1281.chunk.js",
+    "main.js.map": "/yopardy/static/js/main.a29d1281.chunk.js.map",
     "runtime-main.js": "/yopardy/static/js/runtime-main.3619805e.js",
     "runtime-main.js.map": "/yopardy/static/js/runtime-main.3619805e.js.map",
-    "static/js/2.fa98a48c.chunk.js": "/yopardy/static/js/2.fa98a48c.chunk.js",
-    "static/js/2.fa98a48c.chunk.js.map": "/yopardy/static/js/2.fa98a48c.chunk.js.map",
+    "static/js/2.ed7ed1ce.chunk.js": "/yopardy/static/js/2.ed7ed1ce.chunk.js",
+    "static/js/2.ed7ed1ce.chunk.js.map": "/yopardy/static/js/2.ed7ed1ce.chunk.js.map",
     "index.html": "/yopardy/index.html",
-    "precache-manifest.d3ce356c60baaf84f408d467f83b3838.js": "/yopardy/precache-manifest.d3ce356c60baaf84f408d467f83b3838.js",
+    "precache-manifest.5ad03ce3bc0dce1ecd96a174fb554f3b.js": "/yopardy/precache-manifest.5ad03ce3bc0dce1ecd96a174fb554f3b.js",
     "service-worker.js": "/yopardy/service-worker.js",
-    "static/css/main.8f7205c7.chunk.css.map": "/yopardy/static/css/main.8f7205c7.chunk.css.map",
-    "static/js/2.fa98a48c.chunk.js.LICENSE.txt": "/yopardy/static/js/2.fa98a48c.chunk.js.LICENSE.txt"
+    "static/css/main.980826cd.chunk.css.map": "/yopardy/static/css/main.980826cd.chunk.css.map",
+    "static/js/2.ed7ed1ce.chunk.js.LICENSE.txt": "/yopardy/static/js/2.ed7ed1ce.chunk.js.LICENSE.txt",
+    "static/media/dark_arcade_vic_sidious.m4a": "/yopardy/static/media/dark_arcade_vic_sidious.64ec4b9a.m4a"
   },
   "entrypoints": [
     "static/js/runtime-main.3619805e.js",
-    "static/js/2.fa98a48c.chunk.js",
-    "static/css/main.8f7205c7.chunk.css",
-    "static/js/main.4f938a35.chunk.js"
+    "static/js/2.ed7ed1ce.chunk.js",
+    "static/css/main.980826cd.chunk.css",
+    "static/js/main.a29d1281.chunk.js"
   ]
 }
