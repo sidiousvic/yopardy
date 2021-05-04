@@ -20,8 +20,10 @@ const QuestionModal = (props) => {
   useEffect(() => {
     if (timerStarted) {
       const interval = setInterval(() => {
-        if (~~timer - 1 < 1) setShowingAnswer(true);
-        else setTimer(timer - 1);
+        if (~~timer - 1 < 1) {
+          setShowingAnswer(true);
+          setAnswered([...answered, selected.question]);
+        } else setTimer(timer - 1);
       }, 1000);
       return () => {
         clearInterval(interval);
