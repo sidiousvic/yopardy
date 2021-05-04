@@ -14,8 +14,8 @@
       },
       {
         "value": 300,
-        "question": "This is JavaScript's inheritance model.",
-        "answer": "Prototypal inheritance"
+        "question": "Template object that an object inherits methods and properties from.",
+        "answer": "Prototype"
       },
       {
         "value": 400,
@@ -24,8 +24,8 @@
       },
       {
         "value": 500,
-        "question": "A subscription model in which objects subscribe to an event and get notified when the event occurs.",
-        "answer": "Observer pattern"
+        "question": "Data descriptor key that allows a property in an object to be changed with an assignment operator.",
+        "answer": "writable"
       }
     ]
   },
@@ -34,23 +34,24 @@
     "questions": [
       {
         "value": 100,
-        "question": "The repetition of a sequence of computer instructions a specified number of times or until a condition is met.",
-        "answer": "loop"
+        "question": "A function or algorithm that calls itself one or more times until a specified condition is met.",
+        "answer": "Recursion"
       },
       {
         "value": 200,
         "question": "Time required for a function to execute based on its input size.",
         "answer": "Time complexity"
       },
+
       {
         "value": 300,
-        "question": "A function or algorithm that calls itself one or more times until a specified condition is met.",
-        "answer": "Recursion"
+        "question": "A form of automatic memory management which reclaims memory occupied by objects that are no longer in use by the program.",
+        "answer": "Garbage collection"
       },
       {
         "value": 400,
-        "question": "A form of automatic memory management which reclaims memory occupied by objects that are no longer in use by the program.",
-        "answer": "Garbage collection"
+        "question": "Optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again",
+        "answer": "Memoization"
       },
       {
         "value": 500,
@@ -120,32 +121,32 @@
     ]
   },
   {
-    "name": "CI/CD",
+    "name": "🍕😈",
     "questions": [
       {
-        "value": 100,
-        "question": "A software development practice where members of a team combine their work frequently.",
-        "answer": "Continuous Integration"
+        "value": 999,
+        "question": "The strength of the relationships between inter-dependent modules vs the degree to which the elements inside a module belong together.",
+        "answer": "Coupling and cohesion"
       },
       {
-        "value": 200,
-        "question": "It advocates adaptive planning, evolutionary development, early delivery, and continual improvement, and it encourages rapid and flexible response to change.",
-        "answer": "Agile"
+        "value": 999,
+        "question": "The process of injecting a function with number of prepared arguments in order to produce a subsequent function of lesser arity.",
+        "answer": "Partial application"
       },
       {
-        "value": 300,
-        "question": "Used to help a product manager (and others in the organization involved with the product's development) understand key traits, behaviors, goals, responsibilities, and needs of a specific type of user.",
-        "answer": "Persona"
+        "value": 999,
+        "question": "Style of programming that enables the instantiation of functions and data structures when their specified types are provided as parameters.",
+        "answer": "Generic programming"
       },
       {
-        "value": 400,
-        "question": "The process of taking code from version control and making it readily available to users of your application in an automated fashion.",
-        "answer": "Deployment pipeline"
+        "value": 999,
+        "question": "Let q(x) be a property provable about objects x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T",
+        "answer": "Liskov Substitution Principle"
       },
       {
-        "value": 500,
-        "question": "Factor (from XII Factors) in which a developer resists the urge to use different backing services between development and production.",
-        "answer": "Dev/Prod Parity"
+        "value": 999,
+        "question": "A system design principle that deals with the inter-relationships of components—a system should provide components that can be selected and assembled in various combinations to satisfy specific user requirements.",
+        "answer": "Composability"
       }
     ]
   }
