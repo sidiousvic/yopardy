@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useZ from "../z";
 import Fade from "react-reveal/Fade";
-import { set } from "object-path";
 
 const QuestionModal = (props) => {
   const selected = useZ((z) => z.selected);
