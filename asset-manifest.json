@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/yopardy/static/css/main.8f7205c7.chunk.css",
-    "main.js": "/yopardy/static/js/main.95bd176e.chunk.js",
-    "main.js.map": "/yopardy/static/js/main.95bd176e.chunk.js.map",
+    "main.js": "/yopardy/static/js/main.4f938a35.chunk.js",
+    "main.js.map": "/yopardy/static/js/main.4f938a35.chunk.js.map",
     "runtime-main.js": "/yopardy/static/js/runtime-main.3619805e.js",
     "runtime-main.js.map": "/yopardy/static/js/runtime-main.3619805e.js.map",
-    "static/js/2.9e9789d9.chunk.js": "/yopardy/static/js/2.9e9789d9.chunk.js",
-    "static/js/2.9e9789d9.chunk.js.map": "/yopardy/static/js/2.9e9789d9.chunk.js.map",
+    "static/js/2.fa98a48c.chunk.js": "/yopardy/static/js/2.fa98a48c.chunk.js",
+    "static/js/2.fa98a48c.chunk.js.map": "/yopardy/static/js/2.fa98a48c.chunk.js.map",
     "index.html": "/yopardy/index.html",
-    "precache-manifest.2a2a24d00f676bba99d0abb461b22d8e.js": "/yopardy/precache-manifest.2a2a24d00f676bba99d0abb461b22d8e.js",
+    "precache-manifest.d3ce356c60baaf84f408d467f83b3838.js": "/yopardy/precache-manifest.d3ce356c60baaf84f408d467f83b3838.js",
     "service-worker.js": "/yopardy/service-worker.js",
     "static/css/main.8f7205c7.chunk.css.map": "/yopardy/static/css/main.8f7205c7.chunk.css.map",
-    "static/js/2.9e9789d9.chunk.js.LICENSE.txt": "/yopardy/static/js/2.9e9789d9.chunk.js.LICENSE.txt"
+    "static/js/2.fa98a48c.chunk.js.LICENSE.txt": "/yopardy/static/js/2.fa98a48c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3619805e.js",
-    "static/js/2.9e9789d9.chunk.js",
+    "static/js/2.fa98a48c.chunk.js",
     "static/css/main.8f7205c7.chunk.css",
-    "static/js/main.95bd176e.chunk.js"
+    "static/js/main.4f938a35.chunk.js"
   ]
 }
